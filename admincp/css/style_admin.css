@@ -1,0 +1,97 @@
+ul {
+    list-style: none;
+}
+
+.user>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.minhtu {
+    font-family: 'Inspiration', sans-serif;
+    font-size: 40px;
+    color: #6c9de7;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+}
+
+.logo p {
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.derc {
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    border-right: 3px solid rgba(245, 250, 250, 0.4);
+    background-color: #4d4e53;
+}
+
+.sidebar ul {
+    height: 78%;
+    padding: 0;
+    margin: 16px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar ul li {
+    color: #ffffff;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    line-height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar ul li:hover {
+    background-color: aliceblue;
+    color: #4d4e53;
+}
+
+.sidebar ul li:hover a {
+    color: #4d4e53;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
+    margin-left: 300px;
+}
+
+.footer {
+    background-color: #6c9de7;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 13px;
+}

@@ -1,0 +1,12 @@
+.warpper {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #6c9de7;
+}
+
+.form {
+    width: 500px !important;
+}
