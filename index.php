@@ -26,7 +26,11 @@
     <div class="wrapper">
         <?php
         session_start();
-        
+        if (!isset($_SESSION['luottruycap'])) $_SESSION['luottruycap'] = 0;
+else $_SESSION['luottruycap'] += 1;
+if (!isset($_SESSION['email']))  $_SESSION['email'] = 0;
+elseif (isset($_SESSION['email'])) $_SESSION['email'] = 1;
+else  $_SESSION['email'] += 1;
         include("admincp/config/connect.php");
         include("pages/header.php");
         include("pages/menu.php");

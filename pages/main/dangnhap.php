@@ -42,12 +42,12 @@
     <form action="" method="POST" class="container  form ">
        <div class="taikhoan d-flex row">
            <label for="formGroupExampleInput" class="form-label"> Tài Khoản</label>
-           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên của bạn" name="taikhoan">
+           <input type="text" class="form-control" required id="formGroupExampleInput" placeholder="Nhập tên của bạn" name="taikhoan">
        </div>
 
        <div class="matkhau d-flex row">
-           <label for="formGroupExampleInput2" class="form-label"> Mật khẩu</label><br>
-           <input type="password" id="formGroupExampleInput2" class="form-control" name="password">
+           <label for="formGroupExampleInput2" class="form-label" > Mật khẩu</label><br>
+           <input type="password" required id="formGroupExampleInput2" class="form-control" name="password" placeholder="Nhập mật khẩu của bạn">
        </div>
        <div class="row mt-4">
            <input type="submit" name="dangnhap" value="Đăng Nhập">

@@ -21,6 +21,7 @@
     
     ?>
     <li><a href="index.php?action=quanlydonhang&query=them">Quản lý đơn hàng </a></li>
+    <li><a href="index.php?action=baocao&query=hienthi">Báo cáo</a></li>
     <li><a href="http://localhost/Shop/">Home </a></li>
 
 </ul>

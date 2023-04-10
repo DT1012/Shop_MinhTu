@@ -1,12 +1,10 @@
 <?php
-    
-    
     $sql_lietke_sp="SELECT * FROM tbl_sanpham ,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
     $result_lietke_sp= mysqli_query($connect,$sql_lietke_sp);
 ?>
 <div class="list_product">
 <h3>Liệt kê danh mục sản phẩm</h3>
- <table class="table"> 
+ <table class="table container"> 
     <thead>
      <tr>
          <th scope="col">ID</th>
@@ -30,16 +28,16 @@
      <tbody>
      <tr>
          <th scope="row"><?php echo $i ?></th>
-         <td style="width:80px;height:150px; text-align: center;">
-                            <?php echo $row['tensanpham'] ?>   
+         <td >
+            <?php echo $row['tensanpham'] ?>   
          </td>
          
          <td style="width:150px;height:150px;" >
-                            <img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?> " width="100%" >   
+            <img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?> " width="100%" >   
          </td>
 
-         <td style="width:150px;text-align: center;">
-                            <?php echo number_format($row['giasanpham'],0,',','.').'VNĐ'  ?>   
+         <td>
+            <?php echo number_format($row['giasanpham'],0,',','.').'VNĐ'  ?>   
          </td>
          <td><?php echo $row['soluong'] ?>      </td>
          <td><?php echo $row['tendanhmuc'] ?>      </td>

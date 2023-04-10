@@ -16,6 +16,10 @@
                         }elseif($bientam=='quanlydanhmucsanpham' && $query=='sua'){
                             include("modules/quanlydanhmucsp/sua.php");
 
+                        }
+                        elseif($bientam=='baocao' && $query=='hienthi'){
+                            include("modules/baocao/hienthi.php");
+
                         }elseif($bientam=='quanlysanpham' && $query=='them'){
                             include("modules/quanlysp/them.php");
                             include("modules/quanlysp/lietke.php");

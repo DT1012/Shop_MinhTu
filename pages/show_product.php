@@ -13,13 +13,10 @@
                         <div class="new_product">
                         <h3>SẢN PHẨM MỚI</h3>
                         </div>
-                    <?php
-                            include("main/sanphammoi.php");
-                       
-                            
-                        }
+    <?php
+            include("main/sanphammoi.php");   
+        }
  ?>
- 
  </div>
  
  <div style="clear:both;"></div>

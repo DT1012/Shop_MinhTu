@@ -11,31 +11,31 @@
 <table class="table container d-flex justify-content-center" style="border: 0px solid transparent;">
 	<tr>
 		<th scope="row">Họ và tên</th>
-		<td><input type="text" size="50" name="hovaten"></td>
+		<td><input type="text" size="50" required name="hovaten"></td>
 	</tr>
     <tr>
 		<th scope="row">Tài khoản</th>
-		<td><input type="text" size="50" name="taikhoan"></td>
+		<td><input type="text" size="50" required name="taikhoan"></td>
 	</tr>
     <tr>
 		<th scope="row">Mật khẩu</th>
-		<td><input type="password" size="50" name="matkhau"></td>
+		<td><input type="password" size="50" required name="matkhau"></td>
 	</tr>
     <tr>
 		<th scope="row">Nhập lại mật khẩu</th>
-		<td><input type="password" size="50" name="rematkhau"></td>
+		<td><input type="password" size="50" required name="rematkhau"></td>
 	</tr>
 	<tr>
 		<th scope="row">Email</th>
-		<td><input type="text" size="50" name="email"></td>
+		<td><input type="text" size="50" required name="email"></td>
 	</tr>
 	<tr>
 		<th scope="row">Điện thoại</th>
-		<td><input type="text" size="50" name="dienthoai" ></td>
+		<td><input type="text" size="50" required name="dienthoai" ></td>
 	</tr>
 	<tr>
 		<th scope="row">Địa chỉ</th>
-		<td><input type="text" size="50" name="diachi" ></td>
+		<td><input type="text" size="50" required name="diachi" ></td>
 	</tr>
 	
 	<tr>
@@ -51,8 +51,8 @@
 	if(isset($_POST['dangky'])) {
 		$tenkhachhang = $_POST['hovaten'];
 		$taikhoan= $_POST['taikhoan'];
-        $matkhau = md5($_POST['matkhau']);
-        $rematkhau=  md5($_POST['rematkhau']);
+        $matkhau = ($_POST['matkhau']);
+        $rematkhau=  ($_POST['rematkhau']);
 		$email = $_POST['email'];
 		$dienthoai = $_POST['dienthoai'];
 		$diachi = $_POST['diachi'];
@@ -73,7 +73,7 @@
 				$_SESSION['dangky'] = $taikhoan;
 				$_SESSION['email'] = $email;
 				$_SESSION['id_khachhang'] = mysqli_insert_id($connect);
-				header("Location:index.php?quanly=dangnhap");
+				echo " Với tài khoản là: '".$taikhoan."' và mật khẩu là '".$matkhau."' ";
 				}
 			}
 		}
