@@ -26,12 +26,14 @@
     <div class="wrapper">
         <?php
         session_start();
-        if (!isset($_SESSION['luottruycap'])) $_SESSION['luottruycap'] = 0;
-else $_SESSION['luottruycap'] += 1;
-if (!isset($_SESSION['email']))  $_SESSION['email'] = 0;
-elseif (isset($_SESSION['email'])) $_SESSION['email'] = 1;
-else  $_SESSION['email'] += 1;
+        
         include("admincp/config/connect.php");
+        $slq_1="update tbl_luottruycap set count = count + 1";
+        mysqli_query($connect,$slq_1);
+        $slq_2="select * from tbl_luottuycap";
+        $kq = mysqli_query($connect,$slq_2);
+        $d = mysqli_fetch_array($kq);
+        $luottruycap = $_SESSION['$d'];
         include("pages/header.php");
         include("pages/menu.php");
         include("pages/main.php");

@@ -19,7 +19,7 @@ function getTotal($propName, $tableName, $key)
             return 0;
     }
     $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_array($result);
     $maSP = $row["quality"];
     return $maSP;
 }
@@ -29,3 +29,16 @@ function getTotal($propName, $tableName, $key)
     echo  getTotal("soLuongSP", "tbl_sanpham", "sum");
     ?>
 </div>
+<div class="main-product">
+            <div class="product-img">
+
+                <img src="../image/luottruycap.png" alt="Anh" class="img">
+
+            </div>
+            <div class="product-number">
+                <?php
+                echo $_SESSION['$luottruycap'];
+                ?>
+            </div>
+            <p class="product-titel">Lượt truy cập</p>
+        </div>
