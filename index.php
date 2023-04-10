@@ -30,10 +30,7 @@
         include("admincp/config/connect.php");
         $slq_1="update tbl_luottruycap set count = count + 1";
         mysqli_query($connect,$slq_1);
-        $slq_2="select * from tbl_luottuycap";
-        $kq = mysqli_query($connect,$slq_2);
-        $d = mysqli_fetch_array($kq);
-        $luottruycap = $_SESSION['$d'];
+        
         include("pages/header.php");
         include("pages/menu.php");
         include("pages/main.php");
