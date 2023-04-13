@@ -13,6 +13,8 @@
          <th scope="col">Tên Sản phẩm</th>
          <th scope="col">Hình </th>
          <th scope="col">Số lượng</th>
+         <th scope="col">thời gian mua hàng</th>
+
          <th scope="col">Đơn giá</th>
          <th scope="col">Thành tiền</th>
          
@@ -33,6 +35,8 @@
                             <img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?> " width="100%" >   
          </td>
          <td><?php echo $row['soluongmua']?></td>
+         <td><?php echo $row['thoi_gian_dat_hang']?></td>
+         
          <td><?php echo number_format($row['giasanpham'],0,',','.').'VNĐ' ?></td>
          <td><?php echo number_format($thanhtien,0,',','.').'VNĐ' ?></td>
          

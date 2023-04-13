@@ -14,8 +14,8 @@
 		foreach($_SESSION['cart'] as $key => $value){
 			$id_sanpham=$value['id'];
 			$soluong=$value['soluong'];
-			
-			$insert_order_details = "INSERT INTO tbl_cart_detail(id_sanpham,code_cart,soluongmua) VALUE('".$id_sanpham."','".$code_order."','".$soluong."')";
+			$date = date('Y-m-d H:i:s');
+			$insert_order_details = "INSERT INTO tbl_cart_detail(id_sanpham,code_cart,soluongmua,thoi_gian_dat_hang) VALUE('".$id_sanpham."','".$code_order."','".$soluong."','".$date."')";
 			mysqli_query($connect,$insert_order_details);
 		}
 	}

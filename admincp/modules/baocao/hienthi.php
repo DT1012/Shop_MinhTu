@@ -28,18 +28,18 @@
     
 </div>
 <div class="main-product">
-            <div class="product-img">
+    <div class="product-img">
 
-                <img src="../image/luottruycap.png" alt="Anh" class="img">
+        <img src="../image/luottruycap.png" alt="Anh" class="img">
 
-            </div>
-            <div class="product-number">
-                <?php
-                $slq_2="select * from tbl_luottuycap";
-                $kq = mysqli_query($connect,$slq_2);
-                $row = mysqli_fetch_assoc($kq);
-                echo $row['count'];
-                ?>
-            </div>
-            <p class="product-titel">Lượt truy cập</p>
-        </div>
+    </div>
+    <div class="product-number">
+        <?php
+        $slq_2="select * from tbl_luottuycap";
+        $kq = mysqli_query($connect,$slq_2);
+        $row = mysqli_fetch_assoc($kq);
+        echo $row['count'];
+        ?>
+    </div>
+    <p class="product-titel">Lượt truy cập</p>
+</div>
