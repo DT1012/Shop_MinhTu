@@ -7,10 +7,10 @@
     if($page == '' || $page == 1){
 		$begin = 0;
 	}else{
-		$begin = ($page*10)-10;
+		$begin = ($page*5)-5;
 	}
     // GET id là lấy id từ bên MENU.php 
-    $sql_show ="SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,10";
+    $sql_show ="SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,5";
     $query_show =mysqli_query($connect,$sql_show);
   
 ?>

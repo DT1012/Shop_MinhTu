@@ -1,5 +1,5 @@
-<div class="main">
-    <div class="maincontent clearfix">  
+<div class="main d-flex" >
+    <div class="maincontent ">  
      <?php //lấy qiamly từ menu truyền vào bằng phuongư thức GET
         if(isset($_GET['quanly'])){
             $bientam=$_GET['quanly'];
@@ -24,6 +24,8 @@
 
         }elseif ($bientam=='timkiem'){ 
             include("main/timkiem.php");
+        }elseif ($bientam=='timkiemkhoanggia'){ 
+            include("main/timkiemkhoanggia.php");
         }else{ ?>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">

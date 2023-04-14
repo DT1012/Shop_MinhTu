@@ -6,7 +6,7 @@
    
 ?>
 
-<ul class="product_list">
+<ul class="product_list container">
     <?php
         while ($row=mysqli_fetch_array($query_show_new)){
     ?>

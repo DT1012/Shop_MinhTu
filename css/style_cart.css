@@ -17,9 +17,12 @@
 }
 
 .sidebar {
-    float: left;
-    width: 20%;
+    flex: 1;
     margin: 36px 36px 0 20px;
+}
+
+form {
+    width: 100%;
 }
 
 .cart {
