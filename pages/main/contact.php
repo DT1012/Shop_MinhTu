@@ -125,7 +125,7 @@
 
             <div class="text-1">
                 <input type="text" name="text-email" value-size="40" class="form-name" placeholder="Số điện thoại">
-                <input type="text" name="text-email" value-size="40" class="form-email" placeholder="Số lượng">
+                <input type="text" name="text-email" value-size="40" class="form-email" placeholder="Địa chỉ">
             </div>
 
             <div class="text-1">

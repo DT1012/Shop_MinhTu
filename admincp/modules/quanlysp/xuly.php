@@ -14,15 +14,7 @@
     $hienthi=$_POST['hienthi'];
     $danhmuc=$_POST['danhmuc'];
     
-   
-
-    
-
     if(isset($_POST['themsanpham'])){
-
-        
-
-
         if(isset($_FILES['hinhanh'])){
             if($file['type']== 'image/jpeg'||$file['type']== 'imgae/jpg'||$file['type']== 'image/png'){
                 
@@ -38,13 +30,7 @@
                 header('Location:../../index.php?action=quanlysanpham&query=them');
             }
         }
-       
-
     }
-    
-    
-    
-    
     
     elseif(isset($_POST['suasanpham'])){
         if($hinhanh!=''){

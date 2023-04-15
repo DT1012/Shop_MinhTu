@@ -19,6 +19,8 @@
         
         }elseif ($bientam=='dangnhap'){ 
             include("main/dangnhap.php");
+        }elseif ($bientam=='danhmucbaiviet'){ 
+            include("main/danhmucbaiviet.php");
         }elseif ($bientam=='thongtin'){ 
             include("main/thongtin.php");
 

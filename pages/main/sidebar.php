@@ -1,12 +1,29 @@
-<div class="sidebar">
+<div class="sidebar container">
+  <h4>Danh Mục sản phẩm</h4>
     <ul class="list-group">
+
         <?php
             $sql_danhmuc="SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
             $query_danhmuc=mysqli_query($connect,$sql_danhmuc);
             while ($row=mysqli_fetch_array($query_danhmuc)){
 
         ?>
-        <li class="list-group-item sidebar_bg"><a class="sidebar_link" href="index.php?quanly=danhmuclist&id=<?php echo $row['id_danhmuc'] ?>"><?php echo $row['tendanhmuc']?></a></li>
+        <li class="list-group-item sidebar_bg" style="text-transform: uppercase;"><a class="sidebar_link" href="index.php?quanly=danhmuclist&id=<?php echo $row['id_danhmuc'] ?>"><?php echo $row['tendanhmuc']?></a></li>
+        <?php
+
+            }
+            ?>
+    </ul>
+    <h4>Danh Mục bài viết</h4>
+    <ul class="list-group">
+
+        <?php
+            $sql_dm_baiviet="SELECT * FROM tbl_danhmucbaiviet ORDER BY id_baiviet DESC";
+            $query_baiviet=mysqli_query($connect,$sql_dm_baiviet);
+            while ($row=mysqli_fetch_array($query_baiviet)){
+
+        ?>
+        <li class="list-group-item sidebar_bg" style="text-transform: uppercase;"><a class="sidebar_link" href="index.php?quanly=danhmucbaiviet&id=<?php echo $row['id_baiviet'] ?>"><?php echo $row['tendanhmuc_baiviet']?></a></li>
         <?php
 
             }
@@ -30,7 +47,7 @@
               
     
               <!-- Tìm kiếm theo khoảng giá tiền -->
-              <article class="card-group-item">
+              <article class="card-group-item"></article>
                 <header class="card-header">
                   <h6 class="title">Khoảng tiền </h6>
                 </header>
@@ -74,4 +91,7 @@
         <!-- END: Kết quả tìm kiếm theo Tiêu chí Tìm kiếm -->
       </div>
     </form>
+            
+            
+    
 </div>

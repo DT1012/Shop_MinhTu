@@ -47,15 +47,14 @@
     <tr>
         <th scope="row">Danh mục sản phẩm</th>
         <td>
-          <select name="danhmuc"  id="disabledSelect" class="form-selecth >
+          <select name="danhmuc"  id="disabledSelect" class="form-selecth" >
                 <?php
                     $sql_danhmuc="SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
                     $query_danhmuc=mysqli_query($connect,$sql_danhmuc);
                     while($row_danhmuc=mysqli_fetch_array($query_danhmuc)){
                         if($row_danhmuc['id_danhmuc']==$row['id_danhmuc']){
                 ?>
-                <!--dùng value thêm danh mục dựa vào địa chỉ id_danhmuc -->
-                <option value="<?php echo $row_danhmuc['id_danhmuc']?>" selected><?php echo $row_danhmuc['tendanhmuc']?></option>
+                <option value="<?php echo $row_danhmuc['id_danhmuc'] ;?>" selected><?php echo $row_danhmuc['tendanhmuc']?></option>
                 <?php
                         }else{
                         

@@ -42,7 +42,20 @@
                         }elseif($bientam=='quanlydonhang' && $query=='xemdonhang'){
                             include("modules/quanlydonhang/xemdonhang.php");
                             
-                        }elseif($bientam=='dangxuat'){
+                        }
+                        elseif($bientam=='quanlydanhmucbaiviet' && $query=='them'){
+                            include("modules/quanlydanhmucbaiviet/them.php");
+                            include("modules/quanlydanhmucbaiviet/lietke.php");               
+                        }elseif($bientam=='quanlydanhmucbaiviet' && $query=='sua'){
+                            include("modules/quanlydanhmucbaiviet/sua.php");
+                            
+                        }elseif($bientam=='quanlybaiviet' && $query=='them'){
+                            include("modules/quanlybaiviet/them.php");
+                            include("modules/quanlybaiviet/lietke.php");
+                        }elseif($bientam=='quanlybaiviet' && $query=='sua'){
+                            include("modules/quanlybaiviet/sua.php");   
+                        }
+                        elseif($bientam=='dangxuat'){
                             include("../login.php");
                         }
                         else{

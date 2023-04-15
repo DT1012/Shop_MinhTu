@@ -11,9 +11,9 @@
 <?php
         include ("sidebar.php");
     ?>
-<div class="main_danhmuc">
+<div class="main_danhmuc contanier">
 
-    <h3 class="pt-5"> Danh mục : 
+    <h3 class="pt-5" style="text-align: center;"> Danh mục : 
         <?php 
                 if(isset($row_title['tendanhmuc'])){
                     echo $row_title['tendanhmuc'];
