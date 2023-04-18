@@ -42,10 +42,12 @@
     	}
     	?>
     </td>
-         <td>
+        <td>
             <a href="index.php?action=quanlydonhang&query=xemdonhang&code=<?php echo $row['code_cart']?>">Xem đơn hàng</a>|
-            <th><a href="modules/quanlydonhang/xuly.php?iddonhang=<?php echo $row['code_cart']?>">Xóa</a></th>
-         </td>
+        </td>
+        <td>
+            <a href="modules/quanlydonhang/indonhang.php?code=<?php echo $row['code_cart']?>">In đơn hàng</a>|
+        </td>
      </tr>
      
      <?php

@@ -7,20 +7,20 @@
     </tr>
     <tr>
         <th scope="row">Tên bài viết</th>
-        <td><input type="text" name="tenbaiviet"  id="disabledTextInput" class="form-control" placeholder="Tên bài viết"></td>
+        <td><input type="text" name="tenbaiviet"  id="disabledTextInput" class="form-control" placeholder="Tên bài viết" required></td>
     </tr>
     <tr>
         <th scope="row">Hình ảnh</th>
-        <td><input type="file" name="hinhanh" id="disabledTextInput" class="form-control"></td>
+        <td><input type="file" name="hinhanh" id="disabledTextInput" class="form-control" required></td>
         
     </tr>
     <tr>
         <th scope="row">Tóm tắt</th>
-        <td> <textarea name="tomtat"   id="disabledTextInput" class="form-control"></textarea> </td>
+        <td> <textarea name="tomtat"   id="disabledTextInput" class="form-control" required></textarea> </td>
     </tr>
     <tr>
         <th scope="row">Nội dung</th>
-        <td> <textarea name="noidung"  id="disabledTextInput" class="form-control"></textarea> </td>
+        <td> <textarea name="noidung"  id="disabledTextInput" class="form-control" required></textarea> </td>
     </tr>
     <tr>
         <th scope="row">Danh mục bài viết</th>

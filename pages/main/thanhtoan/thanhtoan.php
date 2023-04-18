@@ -2,7 +2,14 @@
  <?php
 	
 	session_start();
+
 	include('../../../admincp/config/connect.php');
+
+	require('../../../carbon/autoload.php');
+
+	use Carbon\Carbon;
+	use Carbon\CarbonInterval;
+	$now = Carbon::now('Asia/Ho_Chi_Minh');
 	if(isset($_POST['redirect'])){
 	$id_khachhang = $_SESSION['id_khachhang'];
 	$code_order = rand(0,9999);// random tuwf 0 den 4 so
@@ -14,7 +21,7 @@
 		foreach($_SESSION['cart'] as $key => $value){
 			$id_sanpham=$value['id'];
 			$soluong=$value['soluong'];
-			$date = date('Y-m-d H:i:s');
+			$date = $now;
 			$insert_order_details = "INSERT INTO tbl_cart_detail(id_sanpham,code_cart,soluongmua,thoi_gian_dat_hang) VALUE('".$id_sanpham."','".$code_order."','".$soluong."','".$date."')";
 			mysqli_query($connect,$insert_order_details);
 		}

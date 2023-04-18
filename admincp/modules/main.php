@@ -1,5 +1,5 @@
 <div class="clear"></div>
-<div class="main">
+<div class="main p-3">
 <?php 
                         
                         if(isset($_GET['action']) && $_GET['query']){                        
@@ -40,8 +40,7 @@
                             include("modules/quanlydonhang/sua.php");
                             
                         }elseif($bientam=='quanlydonhang' && $query=='xemdonhang'){
-                            include("modules/quanlydonhang/xemdonhang.php");
-                            
+                            include("modules/quanlydonhang/xemdonhang.php");                            
                         }
                         elseif($bientam=='quanlydanhmucbaiviet' && $query=='them'){
                             include("modules/quanlydanhmucbaiviet/them.php");
@@ -54,12 +53,14 @@
                             include("modules/quanlybaiviet/lietke.php");
                         }elseif($bientam=='quanlybaiviet' && $query=='sua'){
                             include("modules/quanlybaiviet/sua.php");   
+                        }elseif($bientam=='quanlyweb' && $query=='capnhat'){
+                            include("modules/thongtinweb/quanly.php");   
                         }
                         elseif($bientam=='dangxuat'){
                             include("../login.php");
                         }
                         else{
-                            include("modules/dashboard.php");
+                            include("modules/baocao/hienthi.php");
                         }
                     ?>
 </div>

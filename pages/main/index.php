@@ -57,7 +57,7 @@
 <?php
 $sql_trang = mysqli_query($connect,"SELECT * FROM tbl_sanpham");
 $row_count = mysqli_num_rows($sql_trang);  
-$trang = ceil($row_count/10);
+$trang = ceil($row_count/5);
 ?>
 <p>Trang hiện tại : <?php echo $page ?>/<?php echo $trang ?> </p>
 

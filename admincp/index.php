@@ -28,26 +28,27 @@
     <!-- đường dẫn đến thư viện Raphael.js -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js" defer></script>
     <!-- đường dẫn đến thư viện Morris.js -->
+    <script src="../js/morris.js" defer></script>
 </head>
 <body>
     <h3 class="d-flex justify-content-center pt-3 header_title">Welcome to Admin Page</h3>
     <div class="wrapper">
-    <?php
+        <?php
         include("config/connect.php");
         include("modules/sidebar.php");
         include("modules/main.php");
         ?>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
     <script src="../js/ckeditor/ckeditor.js"></script>
     <script>
+        CKEDITOR.replace('thongtinlienhe');
         CKEDITOR.replace('tomtat');
         CKEDITOR.replace('noidung');
         
     </script>
     <footer>
         <div class="footer">
-            <p>CopyRight by DT 2022</p>
+            <p>CopyRight by DT 2023</p>
         </div>
     </footer>
 

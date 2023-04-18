@@ -23,6 +23,7 @@
     <li><a href="index.php?action=quanlydonhang&query=them">Quản lý đơn hàng </a></li>
     <li><a href="index.php?action=quanlydanhmucbaiviet&query=them">Quản lý bài viết </a></li>
     <li><a href="index.php?action=quanlybaiviet&query=them">Bài viết </a></li>
+    <li><a href="index.php?action=quanlyweb&query=capnhat">Quản lý Thông tin website</a></li>
     <li><a href="index.php?action=baocao&query=hienthi">Báo cáo</a></li>
     <li><a href="http://localhost/Shop/">Home </a></li>
 

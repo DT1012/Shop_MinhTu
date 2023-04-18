@@ -28,30 +28,16 @@ function getTotal($propName, $tableName, $key)
     return $maSP;
 }
 ?>
-<h3>Thống kê theo doanh thu</h3>
- <div id="chart"></div>
- <script>
-    new Morris.Line({
-  // ID of the element in which to draw the chart.
-  element: 'myfirstchart',
-  // Chart data records -- each entry in this array corresponds to a point on
-  // the chart.
-  data: [
-    { year: '2008', value: 20 },
-    { year: '2009', value: 10 },
-    { year: '2010', value: 5 },
-    { year: '2011', value: 5 },
-    { year: '2012', value: 20 }
-  ],
-  // The name of the data record attribute that contains x-values.
-  xkey: 'year',
-  // A list of names of data record attributes that contain y-values.
-  ykeys: ['value'],
-  // Labels for the ykeys -- will be displayed when you hover over the
-  // chart.
-  labels: ['Value']
-});
-</script>
+<h3>Thống kê theo doanh thu: <span id="text-date"></span></h3>
+<p>
+    <select name="" id="" class="select-date">
+        <option value="7ngay">7 ngày </option>
+        <option value="28ngay">28 ngày </option>
+        <option value="90ngay">90 ngày </option>
+        <option value="365ngay">365 ngày </option>
+    </select>
+</p>
+<div id="chart"></div>
 <div class="product-number">
     <?php     
        echo  getTotal("id_khachhang", "tbl_dangky", "count");

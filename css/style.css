@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #000;
+}
+
 ul {
     list-style: none;
 }
@@ -11,6 +15,19 @@ ul {
 a {
     text-decoration: none;
     color: #000;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
 }
 
 .wrapper {
@@ -62,7 +79,16 @@ a {
 .derc {
     font-size: 12px;
     text-align: center;
-    padding: 0;
+    display: block;
+    display: -webkit-box;
+    /* text-align: justify; */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    max-width: fit-content;
+    padding: 5px;
 }
 
 ul.header_list li>.header_danhmuc {
@@ -162,7 +188,6 @@ ul.product_list li {
     background-color: #9cd2f7;
     border: 1px solid black;
     border-radius: 5px;
-    height: 420px;
     margin-bottom: 50px;
     margin-left: 10px;
 }

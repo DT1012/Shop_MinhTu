@@ -14,8 +14,9 @@
             <p class="derc">Tổ ấm của người tinh tế</p>
         </li>
         <li> <a href="index.php">Home</a></li>
+        <li><a href="index.php?quanly=tintuc">Bài viết</a></li>
         
-            <li> <a href="index.php?quanly=contact">Liên hệ </a></li>
+        <li> <a href="index.php?quanly=contact">Liên hệ </a></li>
         <li> <a href="index.php?quanly=giohang">Giỏ hàng</a></li>
         <li><a href="">Danh mục</a>
                 <ul class="header_danhmuc">
@@ -36,8 +37,7 @@
         ?>
             
             <li><a href="index.php?quanly=thongtin"> Thông Tin</a></li>
-            <li> <a href="index.php?dangxuat=1">Đăng xuât
-            </a></li>
+            <li> <a href="index.php?dangxuat=1">Đăng xuât</a></li>
         <?php
             }else{
         ?>

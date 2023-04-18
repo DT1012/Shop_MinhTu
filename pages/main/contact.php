@@ -93,6 +93,10 @@
         background-color: rgba(91, 90, 148, 0.605);
     }
 </style>
+<?php
+    $sql_ttlh="SELECT * FROM tbl_lienhe WHERE id=1";
+    $result_ttlh= mysqli_query($connect,$sql_ttlh);
+?>
 <div class="contact">
     <div class="image-1">
         <iframe src="https://maps.app.goo.gl/skrpQcqYvqnsz3gX8" height="400" width="400" title="Google maps"></iframe>
@@ -100,21 +104,17 @@
 
     <div class="text">
         <h2 class="ten">SHOP Minh Tú</h2>
-        <div class="icons">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>24 Đường Cầu Giấy, Bắc Từ Liêm, Hà Nội</p>
-        </div>
         
-        <div class="icons">
-        <i class="fa-solid fa-phone-volume"></i>
-        <p>1900 818 020</p>
-        </div>
-
-        <div class="icons">
-            <i class="fa-solid fa-envelope"></i>
-            <p>nguyenvantai@gmail.com</p>
-        </div>
-
+        <ul class="icons">
+            <?php
+                while($dong = mysqli_fetch_array($result_ttlh)){
+            ?>
+            <li style="text-decoration: dotted;"><?php echo $dong['thongtinlienhe']  ?></li>
+             <?php
+                }
+             ?>
+        </ul>
+            
         <h2 class="lienhe">Liên Hệ Với Chúng Tôi</h2>
 
         <form method="post" class="form_contact">

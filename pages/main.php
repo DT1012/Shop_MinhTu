@@ -16,14 +16,16 @@
             include("main/contact.php");
         }elseif ($bientam=='sanpham'){ 
             include("main/sanpham.php");
-        
         }elseif ($bientam=='dangnhap'){ 
             include("main/dangnhap.php");
         }elseif ($bientam=='danhmucbaiviet'){ 
             include("main/danhmucbaiviet.php");
+        }elseif ($bientam=='baiviet'){ 
+            include("main/baiviet.php");
+        }elseif ($bientam=='tintuc'){ 
+            include("main/tintuc.php");
         }elseif ($bientam=='thongtin'){ 
             include("main/thongtin.php");
-
         }elseif ($bientam=='timkiem'){ 
             include("main/timkiem.php");
         }elseif ($bientam=='timkiemkhoanggia'){ 
