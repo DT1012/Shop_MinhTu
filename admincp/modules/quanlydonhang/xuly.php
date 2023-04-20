@@ -32,7 +32,7 @@
             $sql_update_thongke = mysqli_query($connect,"INSERT INTO tbl_thongke (ngaydat,soluongban,doanhthu,donhang) Value('$now','$soluongban','$doanhthu','$donhang')");
         }elseif(mysqli_num_rows($query_thongke)!=0){
             while($row_tk = mysqli_fetch_array($query_thongke)){
-                $soluongban = $row_tk['soluongban'] + $soluongban;
+                $soluongban = $row_tk['soluongban'] + $soluongmua;
                 $doanhthu = $row_tk['doanhthu']+$doanhthu;
                 $donhang = $row_tk['donhang']+1;
                 $sql_update_thongke = mysqli_query($connect,"UPDATE tbl_thongke SET soluongban = '$soluongban',doanhthu = '$doanhthu',donhang='$donhang' where ngaydat = '$now'");
