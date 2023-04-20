@@ -14,7 +14,7 @@
 ?>
 <div class="main_danhmuc contanier">
 
-    <h3 class="pt-5" style="text-align: center;"> Danh mục bài viết : 
+    <h3 class="m-5" style="text-align: center;"> Danh mục bài viết : 
         <?php 
          echo $row_title['tendanhmuc_baiviet'];
         ?>

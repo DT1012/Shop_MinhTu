@@ -3,7 +3,7 @@
 	if(isset($_POST['dangnhap'])){
 		$taikhoan = $_POST['taikhoan'];
 		$matkhau = ($_POST['password']);
-		$sql = "SELECT * FROM tbl_dangky ,tbl_admin WHERE tbl_dangky.taikhoan='".$taikhoan."' AND tbl_dangky.matkhau='".$matkhau."'  LIMIT 1";
+		$sql = "SELECT * FROM tbl_dangky ,tbl_admin WHERE tbl_dangky.taikhoan='".$taikhoan."' AND tbl_dangky.matkhau ='".$matkhau."'  LIMIT 1";
 		$row = mysqli_query($connect,$sql);
 		$count = mysqli_num_rows($row);
 		if($count>0){

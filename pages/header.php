@@ -37,6 +37,7 @@
         ?>
             
             <li><a href="index.php?quanly=thongtin"> Thông Tin</a></li>
+            <li><a href="index.php?quanly=lichsudonhang"> lich sử đơn hàng</a></li>
             <li> <a href="index.php?dangxuat=1">Đăng xuât</a></li>
         <?php
             }else{

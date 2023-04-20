@@ -1,5 +1,6 @@
 <div class="clear"></div>
 <div class="main p-3">
+
 <?php 
                         
                         if(isset($_GET['action']) && $_GET['query']){                        

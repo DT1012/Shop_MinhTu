@@ -10,7 +10,7 @@
 <?php
         include ("sidebar.php");
     ?>
-<h3 class="pt-4">Từ khoá tìm kiếm : <?php echo $_POST['tukhoa']; ?></h3>
+<h3 class="m-5" style="text-align: center;">Từ khoá tìm kiếm : <?php echo $_POST['tukhoa']; ?></h3>
 <ul class="product_list">
     <?php
     while($row = mysqli_fetch_array($query_pro)){ 

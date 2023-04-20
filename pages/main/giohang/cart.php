@@ -1,7 +1,7 @@
 <?php
         include ("sidebar.php");
     ?>
-   <div class="cart">
+   <div class="cart container">
 
        <h2 class="ms-50" style="margin-left: 50px;">Cart</h2>
              
@@ -20,7 +20,17 @@
                      }
          
              ?>
-             <table border="1" style="width:100%;" class="table table_giohang">
+             <div class="container">
+  <!-- Responsive Arrow Progress Bar -->
+  <div class="arrow-steps clearfix mb-4">
+        <div class="step current"> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
+        <div class="step "> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển </a></span> </div>
+        <div class="step"> <span><a href="index.php?quanly=thongtinthanhtoan" >Thanh toán</a><span> </div>
+        <div class="step"> <span><a href="#" >Lịch sử đơn hàng</a><span> </div>            
+    </div>
+
+</div>
+             <table class="table table_giohang">
              <thead>
                  <tr>
                      <th scope="col">ID</th>
@@ -75,7 +85,7 @@
                                      if(isset($_SESSION['dangky'])){
                                          
                              ?>
-                                     <p><a href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
+                                     <p><a href="index.php?quanly=vanchuyen">Hình thức vận chuyển</a></p>
                              <?php
                              }else{
                              
@@ -97,8 +107,12 @@
          
          
                  <tr>
-                     <td colspan="6">Hiện tại giỏ hàng trông</td>
-                 </tr>
+                     <td colspan="7">Hiện tại giỏ hàng trông</td>
+                </tr>
+                <tr>
+                    
+                    <td colspan="7" style="text-align: center;"><a href="index.php?quanly=danhmuclist&id=4">Ấn để mua hàng</a></td>
+                </tr>
          
          
          

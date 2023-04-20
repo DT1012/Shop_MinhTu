@@ -13,7 +13,7 @@
     ?>
 <div class="main_danhmuc contanier">
 
-    <h3 class="pt-5" style="text-align: center;"> Danh mục : 
+    <h3 class="m-5" style="text-align: center;"> Danh mục : 
         <?php 
                 if(isset($row_title['tendanhmuc'])){
                     echo $row_title['tendanhmuc'];

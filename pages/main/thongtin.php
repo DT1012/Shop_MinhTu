@@ -13,16 +13,14 @@
  <p><?php
         if(isset($_SESSION['dangky'])){
             echo 'Xin Chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
-            $id =$_SESSION['dangky'];
+            $id = $_SESSION['dangky'];
             $sql_thongtin ="SELECT * FROM tbl_dangky WHERE taikhoan='$id' LIMIT 1";
             $query_thongtin=mysqli_query($connect,$sql_thongtin);
+            $row=mysqli_fetch_assoc($query_thongtin);
+        }
             
-            while($row=mysqli_fetch_array($query_thongtin)){
-            
-        
-  ?></p><br>
-    
-
+ ?>       
+  </p><br>
     <p>Họ và tên : <?php echo $row['hovaten']  ?></p>
     <p>Email : <?php echo $row['email']  ?></p>
     <p>Địa chỉ : <?php echo $row['diachi']  ?></p>
@@ -30,9 +28,4 @@
     
 
 
-<?php
-            }
-    }
-
-    ?>
 </div>

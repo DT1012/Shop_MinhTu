@@ -10,6 +10,12 @@
             include("main/danhmuc.php");
         }elseif ($bientam=='giohang'){ 
             include("main/giohang/cart.php");
+        }elseif ($bientam=='vanchuyen'){ 
+            include("main/thanhtoan/vanchuyen.php");
+        }elseif ($bientam=='thongtinthanhtoan'){ 
+            include("main/thanhtoan/thongtinthanhtoan.php");
+        }elseif ($bientam=='chitietdonhang'){ 
+            include("main/thanhtoan/chitietdonhang.php");
         }elseif ($bientam=='dangky'){ 
             include("main/dangky.php");
         }elseif ($bientam=='contact'){ 
@@ -24,6 +30,8 @@
             include("main/baiviet.php");
         }elseif ($bientam=='tintuc'){ 
             include("main/tintuc.php");
+        }elseif ($bientam=='lichsudonhang'){ 
+            include("main/lichsudonhang.php");
         }elseif ($bientam=='thongtin'){ 
             include("main/thongtin.php");
         }elseif ($bientam=='timkiem'){ 

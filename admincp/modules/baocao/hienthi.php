@@ -13,7 +13,7 @@ function getTotal($propName, $tableName, $key)
             $query = "SELECT COUNT($propName) as 'quality' FROM $tableName";
             break;
         case 'donhang':
-            $query = "SELECT COUNT($propName) as 'quality' FROM $tableName group by $propName";
+            $query = "SELECT COUNT(DISTINCT $propName) as 'quality' FROM $tableName ";
             break;
         case 'sum':
             $query = " SELECT SUM($propName) as 'quality' FROM $tableName";

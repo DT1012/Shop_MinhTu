@@ -50,6 +50,9 @@ form {
     height: 0;
 }
 
+
+/* Responsive Arrow Progress Bar */
+
 .arrow-steps .step {
     font-size: 14px;
     text-align: center;

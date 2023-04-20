@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_ads.css">
     <link rel="stylesheet" href="css/style_detal.css">
@@ -24,7 +25,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" defer> </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js" defer></script>
-    <title>Shop</title>
+<script src="./js/modal.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
