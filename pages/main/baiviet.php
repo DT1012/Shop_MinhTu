@@ -18,7 +18,7 @@
     
     </h3>
     <div class="baiviet">      
-        <img src="admincp/modules/quanlybaiviet/uploads/<?php echo $row_bv['hinhanh'] ?>" alt="lối" style="float: left; width: 550px; padding-right: 30px;">         
+        <img src="admincp/modules/quanlybaiviet/uploads/<?php echo $row_bv['hinhanh'] ?>" alt="lối" style="float: left; width: 550px; padding-right: 30px; margin-top: 20px;">         
         <p class="derc" style="font-size: 16px;"><?php echo $row_bv['noidung']?></p>                  
     </div>
     <?php

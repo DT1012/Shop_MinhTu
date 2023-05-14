@@ -11,7 +11,7 @@
             }
             else{
                 
-                if($cart_item['soluong']<=10){
+                if($cart_item['soluong']<=18){
                     $tangsoluong =$cart_item['soluong']+1;
                     $product[]= array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'],'soluong'=>$tangsoluong,'giasanpham'=>$cart_item['giasanpham'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
              

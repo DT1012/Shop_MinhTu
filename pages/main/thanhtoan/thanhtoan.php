@@ -22,6 +22,7 @@
 				$soluong=$value['soluong'];
 				$date = $now;
 				$insert_order_details = "INSERT INTO tbl_cart_detail(id_sanpham,code_cart,soluongmua,thoi_gian_dat_hang) VALUE('".$id_sanpham."','".$code_order."','".$soluong."','".$date."')";
+
 				mysqli_query($connect,$insert_order_details);
 			}
 			$tieude = "Đặt hàng website bán hàng đồ nội thất Minh Tú Shop thành công!";
@@ -33,11 +34,12 @@
 				<li>".$val['masp']."</li>
 				<li>".number_format($val['giasanpham'],0,',','.')."đ</li>
 				<li>".$val['soluong']."</li>
-
+				
 				</ul>";
 			}
 			$mail = new Mailer();
 			$mail->dathangmail($tieude,$noidung,$_SESSION['email']);
+			
 		}
 		unset($_SESSION['cart']);
 		header('Location:../../../index.php?quanly=chitietdonhang');

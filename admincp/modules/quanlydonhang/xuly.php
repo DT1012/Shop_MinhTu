@@ -25,6 +25,7 @@
             $doanhthu += $row['giasanpham'];
         }
 
+        
         if(mysqli_num_rows($query_thongke) == 0){
             $soluongban = $soluongmua;
             $doanhthu = $doanhthu;

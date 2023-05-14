@@ -32,6 +32,8 @@
             include("main/tintuc.php");
         }elseif ($bientam=='lichsudonhang'){ 
             include("main/lichsudonhang.php");
+        }elseif ($bientam=='xemdonhang'){ 
+            include("main/xemdonhang.php");
         }elseif ($bientam=='thongtin'){ 
             include("main/thongtin.php");
         }elseif ($bientam=='timkiem'){ 
