@@ -1,7 +1,17 @@
 <?php
-    $sql_lietke_dh="SELECT * FROM tbl_giohang ,tbl_dangky,tbl_cart_detail WHERE tbl_giohang.id_khachhang=tbl_dangky.id_khachhang and tbl_giohang.code_cart = tbl_cart_detail.code_cart ORDER BY id_cart DESC";
+    $sql_lietke_dh="SELECT * FROM tbl_giohang ,tbl_dangky,tbl_cart_detail WHERE tbl_giohang.id_khachhang=tbl_dangky.id_khachhang and tbl_giohang.code_cart = tbl_cart_detail.code_cart ORDER BY thoi_gian_dat_hang DESC";
     $result_lietke_dh= mysqli_query($connect,$sql_lietke_dh);
+    if(isset($_GET['xacnhanhuy'])&& isset($_GET['code'])){
+        $xacnhanhuy = $_GET['xacnhanhuy'];
+        $code = $_GET['code'];
+    }else{
+        $xacnhanhuy ='';
+        $code = '';
+    }
+    $sql_update_giohang = mysqli_query($connect,"UPDATE tbl_giohang SET huydon = '$xacnhanhuy' where code_cart = '$code'")
 ?>
+
+
 <h3>Danh sách đơn hàng của người dùng</h3>
  <table class="table container"> 
     <thead>
@@ -16,6 +26,8 @@
             <th scope="col">Hình thức thanh toán</th>
             <th scope="col">Điện thoại</th>
             <th scope="col">Tinh Trạng </th>
+            <th scope="col">Hủy đơn </th>
+
             <th scope="col" colspan="2">Quản lý </th>
         </tr>
     </thead>
@@ -41,7 +53,16 @@
     		echo 'Đã xem';
     	}
     	?>
-    </td>
+        </td>
+        <td>
+    	<?php if($row['huydon']==0){
+    	}elseif($row['huydon']==1){
+    		echo '<a href="index.php?action=quanlydonhang&query=them&code=' .$row["code_cart"].'&xacnhanhuy=2">Xác nhận hủy đơn</a>';
+    	}else{
+            echo 'Đã Hủy';
+        }
+    	?>
+        </td>
         <td>
             <a href="index.php?action=quanlydonhang&query=xemdonhang&code=<?php echo $row['code_cart']?>">Xem đơn hàng</a>|
         </td>

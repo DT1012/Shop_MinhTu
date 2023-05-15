@@ -32,7 +32,7 @@
          <td><?php echo $row['code_cart'] ?></td>
          <td><?php echo $row['tensanpham']?></td>
          <td style="width:150px;height:150px;" >
-                            <img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?> " width="100%" >   
+            <img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?> " width="100%" >   
          </td>
          <td><?php echo $row['soluongmua']?></td>
          <td><?php echo $row['thoi_gian_dat_hang']?></td>
